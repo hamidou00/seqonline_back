@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 const EffectSchema = new Schema({
     name: String,
-    options: Object
+    options: Object,
 })
 
 const EffectModel = mongoose.model("Effect", EffectSchema);

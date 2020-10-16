@@ -3,15 +3,8 @@ const Schema = mongoose.Schema;
 
 const SynthSchema = new Schema({
     name: String,
-    effects: [{
-        type: Schema.Types.ObjectId,
-        ref: "Effect"
-    }],
-
-    sequences: [{
-        type: Schema.Types.ObjectId,
-        ref: "Sequence"
-    }]
+    sequence : Array,
+    effects : Object,
 })
 
 const SynthModel = mongoose.model("Synth", SynthSchema);

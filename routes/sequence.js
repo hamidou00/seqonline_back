@@ -32,4 +32,10 @@ router.delete('/delete/:id', async (req, res, next) => {
   res.send(`Sequence successfully deleted : ${SequenceDeleted}`)
 })
 
+//Get All by ProjectId
+router.get('/getByProject/:id', async (req, res, next) => {
+    const Sequence = await SequenceModel.find(req.params.id)
+    res.json(Sequence);
+})
+
 module.exports = router;

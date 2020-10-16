@@ -32,4 +32,12 @@ router.delete('/delete/:id', async (req, res, next) => {
   res.send(`project successfully deleted : ${projectDeleted}`)
 })
 
+//Get All Bye UserId
+router.get('/getByUser/:id', async (req, res, next) => {
+    const userId = req.params.id;
+    const projectList = await ProjectModel.find();
+    const filteredProjects = projectList.filter(project => project.creator == userId)
+    res.json(filteredProjects)
+})
+
 module.exports = router;
