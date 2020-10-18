@@ -1,4 +1,4 @@
-require("dotenv").config();
+//require("dotenv").config();
 require("./config/mongo");
 
 // const createError = require('http-errors');
