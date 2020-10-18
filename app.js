@@ -1,5 +1,5 @@
 //require("dotenv").config();
-require("./config/mongo");
+//require("./config/mongo");
 
 // const createError = require('http-errors');
 // const cookieParser = require('cookie-parser');
