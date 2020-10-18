@@ -18,10 +18,10 @@ const app = express();
 app.use(express.json());
 
 // VIEW ENGINE setup
-app.set('view engine', 'jade');
+//app.set('view engine', 'jade');
 
 // CORS
-app.use(cors());
+app.use(cors("*"));
 
 // API CALL LOGGIN
 app.use(morganLogger('dev'));
