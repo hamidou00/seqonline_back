@@ -21,7 +21,7 @@ app.use(express.json());
 //app.set('view engine', 'jade');
 
 // CORS
-app.use(cors("*"));
+app.use(cors(['https://seqonline-back.herokuapp.com/', 'http://seqonline.fr/']));
 
 // API CALL LOGGIN
 app.use(morganLogger('dev'));
