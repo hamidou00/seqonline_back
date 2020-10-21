@@ -17,7 +17,7 @@ router.get('/getOne/:id', async (req, res, next) => {
 //Create One
 router.post('/create', async (req, res, next) => {
   const projectCreated = await ProjectModel.create(req.body);
-  res.send(`project successfully created : ${projectCreated}`);
+  res.json(projectCreated);
 })
 
 //Update One

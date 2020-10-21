@@ -23,12 +23,15 @@ const projectSchema = new Schema({
     //     }]
     // }, // all effects name and synths name
 
-    synthList: [{
-        type: Schema.Types.ObjectId,
-        ref: "Synth"
-    }],
+    // synthList: [{
+    //     type: Schema.Types.ObjectId,
+    //     ref: "Synth"
+    // }],
 
-    sequence: Array
+    sequence: {
+        type : Array,
+        default : []
+    },
 
     //   samples: [{
     //     type: Schema.Types.ObjectId,
